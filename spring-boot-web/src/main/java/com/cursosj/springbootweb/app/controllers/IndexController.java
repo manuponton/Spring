@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
+@RequestMapping("/app")
 @Controller
 public class IndexController {
     //RequestMapping se encarga de mapear una ruta URL
