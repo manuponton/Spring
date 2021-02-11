@@ -21,7 +21,8 @@
         <tr th:each="usuario: ${usuarios}">
         <th th:text="${usuario.nombre}"></th>
         <th th:text="${usuario.apellido}"></th>
-        <th th:text="${usuario.email}"></th>
+        <th th:if="${!usuario.email.isEmpty()}" th:text="${usuario.email}"></th>
+        <th th:if="${usuario.email.isEmpty()}"> No tiene correo</th>
         </tr>
         </tbody>
     </table>
